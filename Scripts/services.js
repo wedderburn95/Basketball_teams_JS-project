@@ -17,10 +17,20 @@ function BasketballTeamLocation() {
     .then( function(response) {
     //   debugger
       teams = response.data
+      displayTeams()
     })
   
 }
 
+function displayTeams() {
+   const display = document.getElementById("display")
+    const displayName = teams.map(team=> team.name)
+    displayName.forEach(displayName => {
+      const list =  document.createElement('li')
+      list.innerText= displayName
+      display.appendChild(list)
+    } )
+}
 
 form.addEventListener("submit", showTeams)
 
