@@ -4,6 +4,7 @@ const data = 'https://www.balldontlie.io/api/v1/teams/data'
 let teams = []
 const form = document.querySelector("#select-team")
 const action = document.querySelector("#new-task-description")
+const reloadButton = document.querySelector('#clear')
 
 document.addEventListener("DOMContentLoaded", function() {
     BasketballTeamLocation()
@@ -33,6 +34,10 @@ function displayTeams() {
 }
 
 form.addEventListener("submit", showTeams)
+reloadButton.addEventListener('click', () => {
+    teamName.forEach(input => input.value = '');
+});
+
 
 function showTeams(event) {
     event.preventDefault()
