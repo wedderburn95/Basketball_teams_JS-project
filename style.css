@@ -17,7 +17,12 @@
 
   form {
     color: orange
+
   }
+
+input[type="submit"] {
+  color: red
+}
 
   button {
     color: orange
