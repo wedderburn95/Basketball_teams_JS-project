@@ -1,3 +1,20 @@
 * {
     text-align: center;
   }
+
+  div {
+    color: blue
+  }
+
+  li {
+    color: red
+
+  }
+
+  h1{
+    color: green
+  }
+
+  form {
+    color: orange
+  }
